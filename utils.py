@@ -1,5 +1,6 @@
 import torch
 
+## input is the list of slide indices
 def gen_M_matrix(input, device='cuda'):
     tsize = len(input)
     M = torch.zeros(tsize,tsize).float().to(device)
